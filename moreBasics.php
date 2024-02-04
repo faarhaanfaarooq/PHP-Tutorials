@@ -22,6 +22,7 @@
         <h1>Welcome To The Club</h1>
         Your party status is here:
         <?php
+        //Conditional Statement
         $age = 10;
         if($age > 18){
             echo "You can enter.";
@@ -32,6 +33,15 @@
         else{
             echo "Sorry, you can not enter.";
         }
+        //Arrays
+        $languages = array("Python", "C++", "Java", "PHP");
+        echo "<br>";
+        echo "Example of Array: ";
+        echo "<br>";
+        echo count($languages);
+        echo "<br>";
+        echo $languages[0];
+        echo "<br>";
         ?>
     </div>
 </body>
