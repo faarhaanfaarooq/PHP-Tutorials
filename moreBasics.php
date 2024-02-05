@@ -42,6 +42,14 @@
         echo "<br>";
         echo $languages[0];
         echo "<br>";
+
+        //Loops
+        $a =  0;
+        while ($a <= 10) {
+            echo "<br>The value of a is: ";
+            echo $a;
+            $a++;
+        }
         ?>
     </div>
 </body>
