@@ -44,12 +44,37 @@
         echo "<br>";
 
         //Loops
-        $a =  0;
-        while ($a <= 10) {
-            echo "<br>The value of a is: ";
-            echo $a;
+        //While loop
+        $a = 0;
+        while ($a < count($languages)) {
+            echo "<br>The languages are: ";
+            echo $languages[$a];
             $a++;
         }
+
+        //Do while loop
+        $x = 0;
+        do {
+            echo "<br>The values are: ";
+            echo $x;
+            $x++;
+        } while ($x <= 10);
+
+        //For loop
+        for ($i=0; $i < 10; $i++) { 
+            echo "<br> The number is: $i";
+        }
+
+        //Foreach loop
+        foreach ($languages as $values) {
+            echo "<br> $values";
+        }
+
+        //function
+        function printFive(){
+            echo "<br>FIVE";
+        }
+        printFive();
         ?>
     </div>
 </body>
